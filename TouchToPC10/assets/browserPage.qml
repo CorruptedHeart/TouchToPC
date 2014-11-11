@@ -29,6 +29,15 @@ Page {
                 }
             }
             Button {
+                text: "F5"
+                preferredWidth: 128.0
+                maxWidth: 128.0
+                minWidth: 128.0
+                onClicked: {
+                    touchToPCApp.sendKeyPress("REFRESH");
+                }
+            }
+            Button {
                 text: "Page DOWN"
                 onClicked: {
                     touchToPCApp.sendKeyPress("PAGEDOWN");
@@ -44,48 +53,68 @@ Page {
 
             }
             horizontalAlignment: HorizontalAlignment.Center
+
+            minHeight: 100.0
+            preferredHeight: 100.0
+            maxHeight: 100.0
             Button {
                 text: "^"
                 onClicked: {
                     touchToPCApp.sendKeyPress("ARROW-UP");
                 }
-                preferredWidth: 20.0
-                maxWidth: 20.0
-                minWidth: 20.0
+                preferredWidth: 128.0
+                maxWidth: 128.0
+                minWidth: 128.0
+                preferredHeight: 128.0
+                minHeight: 128.0
+                maxHeight: 128.0
+
             }
         }
         Container {
             layout: StackLayout {
                 orientation: LayoutOrientation.LeftToRight
-
             }
+            minHeight: 150
+            preferredHeight: 150
+            maxHeight: 150
             horizontalAlignment: HorizontalAlignment.Center
+            verticalAlignment: VerticalAlignment.Center
             Button {
                 text: "<"
-                preferredWidth: 20.0
-                maxWidth: 20.0
-                minWidth: 20.0
                 onClicked: {
                     touchToPCApp.sendKeyPress("ARROW-LEFT");
                 }
+                preferredWidth: 128.0
+                maxWidth: 128.0
+                minWidth: 128.0
+                preferredHeight: 128.0
+                minHeight: 128.0
+                maxHeight: 128.0
             }
             Button {
                 text: "v"
-                preferredWidth: 20.0
-                maxWidth: 20.0
-                minWidth: 20.0
                 onClicked: {
                     touchToPCApp.sendKeyPress("ARROW-DOWN");
                 }
+                preferredWidth: 128.0
+                maxWidth: 128.0
+                minWidth: 128.0
+                preferredHeight: 128.0
+                minHeight: 128.0
+                maxHeight: 128.0
             }
             Button {
                 text: ">"
-                preferredWidth: 20.0
-                maxWidth: 20.0
-                minWidth: 20.0
                 onClicked: {
                     touchToPCApp.sendKeyPress("ARROW-RIGHT");
                 }
+                preferredWidth: 128.0
+                maxWidth: 128.0
+                minWidth: 128.0
+                preferredHeight: 128.0
+                minHeight: 128.0
+                maxHeight: 128.0
             }
         }
     }
