@@ -190,6 +190,10 @@ namespace Touch_Server
                             {
                                 InputSimulator.SimulateKeyPress(VirtualKeyCode.DELETE);
                             }
+                            else if (text.EndsWith("REFRESH"))
+                            {
+                                InputSimulator.SimulateKeyPress(VirtualKeyCode.F5);
+                            }
                             else
                             {
                                 InputSimulator.SimulateTextEntry(text.Substring(2));
